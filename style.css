@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'merriw';
+    src: url(fontes/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url(fontes/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'merriw-bold';
+    src: url(fontes/Merriweather-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background: #D7D4FF;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+}
+
+header h1{
+    font-family: 'merriw';
+    font-weight: 500;
+}
+
+header p{
+    font-family: 'lato';
+    margin-top: 10%;
+    margin-bottom: 15%;
+    color: #555555;
+}
+
+button{
+    background: #6C63FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 9em;
+    font-family: 'lato';
+    font-size: 1.2rem;
+}
+
+.head-1{
+   max-width:25%;
+   margin-left: 10em;
+}
+
+.head-2 img{
+    width: 70%;
+}
+
+main{
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+section{
+    min-width: 90%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5em;
+    background: #fff;
+}
+
+main article{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    height: 22em;
+    background-color:white;
+    margin: 2em;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.20); 
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.20);
+}
+
+article .fundo{
+    background: rgb(209, 58, 3);
+    height:12em;
+}
+
+article h2{
+    font-family: 'merriw-bold';
+    margin-left: 1em;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+article p{
+    font-family: 'merriw';
+    opacity: 0.4;
+    font-size:0.85em;
+    width: 14em;
+    margin-left: 2em;
+}
+
+
+.formulario{
+    background: #D7D4FF;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario h1{
+    font-size:2.2em;
+    font-family: 'merriw';
+    font-weight: 300;
+    width: 15em;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario input{
+    height: 3em;
+}
+
+.formulario input,textarea{
+    margin: 10px;
+    width: 30em;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+.formulario button{
+    width: 21.1em;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+input::placeholder{
+    padding: 10px;
+    font-family: 'lato';
+}
+
+textarea::placeholder{
+    padding: 10px;
+    font-family: 'lato';
+}
+
+.sessao{
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+@media  screen and (max-width:765px) {
+    html{
+        font-size: 0.7em;
+    }
+
+    header{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head-1{
+        margin-left: 3em;
+        max-width: 80%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1.2em;
+    }
+
+    .head-2{
+        margin-left:7em;
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formulario h1{
+        margin-bottom: 10px;
+    }
+
+    .formulario input,textarea{
+        margin-bottom: 10px;
+        width: 80vw;
+    }
+
+    .formulario button{
+        width: 80vw;
+    }
+
+}
