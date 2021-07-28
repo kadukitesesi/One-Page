@@ -114,7 +114,7 @@ article p{
     background: #D7D4FF;
     text-align: center;
     width: 100vw;
-    min-height: 85vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,6 +225,10 @@ textarea::placeholder{
 
     .formulario button{
         width: 80vw;
+    }
+
+    .formulario{
+        position: fixed;
     }
 
 }
