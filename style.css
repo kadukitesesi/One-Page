@@ -224,11 +224,7 @@ textarea::placeholder{
     }
 
     .formulario button{
-        width: 80vw;
-    }
-
-    .formulario{
-        position: fixed;
+        width: 90vw;
     }
 
 }
