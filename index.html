@@ -54,11 +54,13 @@
         <section class="sessao">
             <div  class="formulario">
                 <h1>Entre em contato</h1>
-                <form method="POST" action="form/email.php">
-                    <input placeholder="Nome" type="text" name="nome" id="nome">
+                <form action="https://api.staticforms.xyz/submit" method="POST">
+                    <input type="hidden" name="accessKey" value="6c373493-46a3-490e-bb11-f6effd4565ee">
+                    <input placeholder="Nome" type="text" name="name" id="nome">
                     <input placeholder="E-mail" type="email" name="email" id="e-mail">
-                    <input placeholder="Telefone" type="text" name="telefone" id="telefone">
-                    <textarea placeholder="Mensagem..." name="mensagem" id="mensagem" cols="20" rows="10"></textarea>
+                    <input placeholder="Telefone" type="text" name="phone" id="telefone">
+                    <textarea placeholder="Mensagem..." name="message" id="mensagem" cols="20" rows="10"></textarea>
+                    <input type="hidden" name="redirectTo" value="https://kadukitesesi.github.io/One-Page/">
                     <input type="submit" value="Enviar" id="sub">
                 </form>
             </div>
