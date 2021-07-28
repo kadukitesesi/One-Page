@@ -54,12 +54,12 @@
         <section class="sessao">
             <div  class="formulario">
                 <h1>Entre em contato</h1>
-                <form>
+                <form method="POST" action="form/email.php">
                     <input placeholder="Nome" type="text" name="nome" id="nome">
-                    <input placeholder="E-mail" type="email" name="e-mail" id="e-mail">
+                    <input placeholder="E-mail" type="email" name="email" id="e-mail">
                     <input placeholder="Telefone" type="text" name="telefone" id="telefone">
                     <textarea placeholder="Mensagem..." name="mensagem" id="mensagem" cols="20" rows="10"></textarea>
-                    <button>Enviar mensagem</button>
+                    <input type="submit" value="Enviar" id="sub">
                 </form>
             </div>
         </section>

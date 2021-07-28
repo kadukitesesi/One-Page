@@ -24,7 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 10vh;
 }
 
@@ -135,7 +135,7 @@ article p{
 }
 
 .formulario input{
-    height: 3em;
+    padding: 1em;
 }
 
 .formulario input,textarea{
@@ -144,31 +144,39 @@ article p{
     border-radius: 5px;
     border: none;
     resize: none;
+    padding: 1em;
 }
 
-.formulario button{
-    width: 21.1em;
-}
-
-textarea:focus, input:focus, select:focus {
+textarea:focus, input:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 } 
 
 input::placeholder{
-    padding: 10px;
+    padding: 1em;
     font-family: 'lato';
 }
 
 textarea::placeholder{
-    padding: 10px;
+    padding: 0.1em;
     font-family: 'lato';
 }
 
 .sessao{
     height: 100vh;
     margin-bottom: 0;
+}
+
+#sub{
+    background: #6C63FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 22.2em;
+    font-family: 'lato';
+    font-size: 1.2rem;
 }
 
 @media  screen and (max-width:765px) {
@@ -182,6 +190,7 @@ textarea::placeholder{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     .head-1{
@@ -192,6 +201,7 @@ textarea::placeholder{
         flex-direction: column;
         justify-content: flex-start;
         font-size: 1.2em;
+        margin-bottom: 2em;
     }
 
     .head-2{
